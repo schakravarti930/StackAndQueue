@@ -4,17 +4,17 @@ using System.Text;
 
 namespace StackAndQueue
 {
-    public class Stack
+    public class Stack<T>
     {
-        private Node top;
+        private Node<T> top;
         public Stack()
         {
             this.top = null;
         }
-        public void Push(int item)
+        public void Push(T item)
         {
-            Node node = new Node(item);
-            if(top == null)
+            Node<T> node = new Node<T>(item);
+            if (top == null)
             {
                 top = node;
             }
@@ -26,14 +26,14 @@ namespace StackAndQueue
         }
         public void Display()
         {
-            if(top == null)
+            if (top == null)
             {
                 Console.WriteLine("Stack is Empty");
             }
             else
             {
-                Node temp = top;
-                while(temp != null)
+                Node<T> temp = top;
+                while (temp != null)
                 {
                     Console.Write(temp.data + " ");
                     temp = temp.next;

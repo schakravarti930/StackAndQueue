@@ -7,23 +7,18 @@ namespace StackAndQueue
         static void Main(string[] args)
         {
             //Stack Operations
-            Stack stack = new Stack();
-            stack.Push(70);
-            stack.Push(30);
-            stack.Push(56);
-            stack.Display();
-            stack.Peek();
-            stack.Pop();
-            stack.IsEmpty();
+            Stack<float> stack = new Stack<float>();
+            stack.Push(1.2f);
+            stack.Push(32f);
+            stack.Push(44.3f);
             stack.Display();
 
             //Queue Operations
-            Queue linkedListQueue = new Queue();
-            linkedListQueue.Enqueue(56);
-            linkedListQueue.Enqueue(30);
-            linkedListQueue.Enqueue(70);
-            linkedListQueue.Dequeue();
-            linkedListQueue.Display();
+            Queue<string> queue = new Queue<string>();
+            queue.Enqueue("Hello");
+            queue.Enqueue("There");
+            queue.Enqueue("How");
+            queue.Display();
         }
     }
 }
