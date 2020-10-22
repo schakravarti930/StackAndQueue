@@ -24,6 +24,17 @@ namespace StackAndQueue
             Console.WriteLine("{0} inserted into queue ", node.data);
 
         }
+        internal void Dequeue()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                head = head.next;
+            }
+        }
         internal void Display()
         {
             Node temp = this.head;
