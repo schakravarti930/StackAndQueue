@@ -7,9 +7,13 @@ namespace StackAndQueue
         static void Main(string[] args)
         {
             Stack stack = new Stack();
-            stack.push(12);
-            stack.push(13);
-            stack.push(14);
+            stack.Push(70);
+            stack.Push(30);
+            stack.Push(56);
+            stack.Display();
+            stack.Peek();
+            stack.Pop();
+            stack.IsEmpty();
             stack.Display();
         }
     }
